@@ -1,0 +1,33 @@
+
+.success {
+    border: 2px solid limegreen;
+}
+
+.error {
+    border: 2px solid crimson;
+}
+
+body {
+    background: #eee;
+}
+
+form {
+    max-width: 200px;
+    margin: 40px auto;
+    background: white;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 0;
+}
+
+input, textarea, select {
+    outline: 0;
+}
