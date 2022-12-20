@@ -17,7 +17,17 @@ form.addEventListener('submit', e => {
         } 
     });
     // output the score
+    scrollTo(0,0);  // scroll to top of screen so score can be viewed
     result.classList.remove("d-none");
-    displayScore.textContent = score + '%';
-    console.log(score);
+
+    let output = 0;
+    const timer = setInterval(() => {
+        displayScore.textContent = output + '%';
+        if (output === score) {
+            clearInterval(timer);
+        } else {
+            output++;
+        }
+    }, 10);
+
 });
